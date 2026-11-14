@@ -1,0 +1,8 @@
+{
+  "name": "PocketGuitar",
+  "description": "Offline, touch-activated guitar rhythm engine with ultra-low latency audio, realistic strumming, and complete Android Jetpack Compose project source.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

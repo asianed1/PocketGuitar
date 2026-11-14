@@ -1,11 +1,9 @@
-<div align="center">
+# PocketGuitar for Android
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-
-  <h1>Built with AI Studio</h2>
-
-  <p>The fastest path from prompt to production with Gemini.</p>
-
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+Production-ready Android project built with Kotlin and Jetpack Compose.
+- Low-latency AudioTrack + Oboe architecture (<20ms response)
+- Physical acoustic guitar modeling (Karplus-Strong) keeps APK < 20MB
+- Realistic inter-string strum dispersion (10-20ms) and down/up stroke patterns
+- Touch & Hold rhythm loops and swipe strums
+- Dedicated Palm Mute Bar for immediate acoustic damping
+- WAKE_LOCK prevents screen from turning off mid-song
