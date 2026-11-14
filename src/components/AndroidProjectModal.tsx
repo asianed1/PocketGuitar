@@ -435,23 +435,81 @@ object ChordDatabase {
         "Cmaj7" to Chord("Cmaj7", "C", "maj7", intArrayOf(-1, 3, 2, 0, 0, 0), intArrayOf(0, 3, 2, 0, 0, 0)),
         "Cm7" to Chord("Cm7", "C", "m7", intArrayOf(-1, 3, 5, 3, 4, 3), intArrayOf(0, 1, 3, 1, 2, 1), 3, 1),
         "Csus4" to Chord("Csus4", "C", "sus4", intArrayOf(-1, 3, 3, 0, 1, 1), intArrayOf(0, 3, 4, 0, 1, 1)),
+        "Cadd9" to Chord("Cadd9", "C", "add9", intArrayOf(-1, 3, 2, 0, 3, 3), intArrayOf(0, 2, 1, 0, 3, 4)),
+        "C#" to Chord("C#", "C#", "Major", intArrayOf(-1, 4, 6, 6, 6, 4), intArrayOf(0, 1, 2, 3, 4, 1), 4, 1),
+        "C#m" to Chord("C#m", "C#", "Minor", intArrayOf(-1, 4, 6, 6, 5, 4), intArrayOf(0, 1, 3, 4, 2, 1), 4, 1),
+        "C#7" to Chord("C#7", "C#", "7", intArrayOf(-1, 4, 6, 4, 6, 4), intArrayOf(0, 1, 3, 1, 4, 1), 4, 1),
         "D" to Chord("D", "D", "Major", intArrayOf(-1, -1, 0, 2, 3, 2), intArrayOf(0, 0, 0, 1, 3, 2)),
         "Dm" to Chord("Dm", "D", "Minor", intArrayOf(-1, -1, 0, 2, 3, 1), intArrayOf(0, 0, 0, 2, 3, 1)),
         "D7" to Chord("D7", "D", "7", intArrayOf(-1, -1, 0, 2, 1, 2), intArrayOf(0, 0, 0, 2, 1, 3)),
+        "Dmaj7" to Chord("Dmaj7", "D", "maj7", intArrayOf(-1, -1, 0, 2, 2, 2), intArrayOf(0, 0, 0, 1, 2, 3)),
+        "Dm7" to Chord("Dm7", "D", "m7", intArrayOf(-1, -1, 0, 2, 1, 1), intArrayOf(0, 0, 0, 2, 1, 1), 1, 4),
+        "Dsus4" to Chord("Dsus4", "D", "sus4", intArrayOf(-1, -1, 0, 2, 3, 3), intArrayOf(0, 0, 0, 1, 3, 4)),
+        "D#" to Chord("D#", "D#", "Major", intArrayOf(-1, 6, 8, 8, 8, 6), intArrayOf(0, 1, 2, 3, 4, 1), 6, 1),
+        "Eb" to Chord("Eb", "D#", "Major", intArrayOf(-1, 6, 8, 8, 8, 6), intArrayOf(0, 1, 2, 3, 4, 1), 6, 1),
+        "Ebm" to Chord("Ebm", "D#", "Minor", intArrayOf(-1, 6, 8, 8, 7, 6), intArrayOf(0, 1, 3, 4, 2, 1), 6, 1),
+        "Eb7" to Chord("Eb7", "D#", "7", intArrayOf(-1, 6, 8, 6, 8, 6), intArrayOf(0, 1, 3, 1, 4, 1), 6, 1),
         "E" to Chord("E", "E", "Major", intArrayOf(0, 2, 2, 1, 0, 0), intArrayOf(0, 2, 3, 1, 0, 0)),
         "Em" to Chord("Em", "E", "Minor", intArrayOf(0, 2, 2, 0, 0, 0), intArrayOf(0, 2, 3, 0, 0, 0)),
+        "E7" to Chord("E7", "E", "7", intArrayOf(0, 2, 0, 1, 0, 0), intArrayOf(0, 2, 0, 1, 0, 0)),
+        "Emaj7" to Chord("Emaj7", "E", "maj7", intArrayOf(0, 2, 1, 1, 0, 0), intArrayOf(0, 3, 1, 2, 0, 0)),
+        "Em7" to Chord("Em7", "E", "m7", intArrayOf(0, 2, 2, 0, 3, 0), intArrayOf(0, 1, 2, 0, 3, 0)),
+        "Esus4" to Chord("Esus4", "E", "sus4", intArrayOf(0, 2, 2, 2, 0, 0), intArrayOf(0, 2, 3, 4, 0, 0)),
         "F" to Chord("F", "F", "Major", intArrayOf(1, 3, 3, 2, 1, 1), intArrayOf(1, 3, 4, 2, 1, 1), 1, 0),
+        "Fm" to Chord("Fm", "F", "Minor", intArrayOf(1, 3, 3, 1, 1, 1), intArrayOf(1, 3, 4, 1, 1, 1), 1, 0),
+        "F7" to Chord("F7", "F", "7", intArrayOf(1, 3, 1, 2, 1, 1), intArrayOf(1, 3, 1, 2, 1, 1), 1, 0),
+        "Fmaj7" to Chord("Fmaj7", "F", "maj7", intArrayOf(-1, -1, 3, 2, 1, 0), intArrayOf(0, 0, 3, 2, 1, 0)),
+        "Fsus4" to Chord("Fsus4", "F", "sus4", intArrayOf(1, 3, 3, 3, 1, 1), intArrayOf(1, 2, 3, 4, 1, 1), 1, 0),
+        "F#" to Chord("F#", "F#", "Major", intArrayOf(2, 4, 4, 3, 2, 2), intArrayOf(1, 3, 4, 2, 1, 1), 2, 0),
+        "F#m" to Chord("F#m", "F#", "Minor", intArrayOf(2, 4, 4, 2, 2, 2), intArrayOf(1, 3, 4, 1, 1, 1), 2, 0),
+        "F#7" to Chord("F#7", "F#", "7", intArrayOf(2, 4, 2, 3, 2, 2), intArrayOf(1, 3, 1, 2, 1, 1), 2, 0),
+        "F#m7" to Chord("F#m7", "F#", "m7", intArrayOf(2, 4, 2, 2, 2, 2), intArrayOf(1, 3, 1, 1, 1, 1), 2, 0),
         "G" to Chord("G", "G", "Major", intArrayOf(3, 2, 0, 0, 3, 3), intArrayOf(2, 1, 0, 0, 3, 4)),
+        "Gm" to Chord("Gm", "G", "Minor", intArrayOf(3, 5, 5, 3, 3, 3), intArrayOf(1, 3, 4, 1, 1, 1), 3, 0),
+        "G7" to Chord("G7", "G", "7", intArrayOf(3, 2, 0, 0, 0, 1), intArrayOf(3, 2, 0, 0, 0, 1)),
+        "Gmaj7" to Chord("Gmaj7", "G", "maj7", intArrayOf(3, 2, 0, 0, 0, 2), intArrayOf(2, 1, 0, 0, 0, 3)),
+        "Gm7" to Chord("Gm7", "G", "m7", intArrayOf(3, 5, 3, 3, 3, 3), intArrayOf(1, 3, 1, 1, 1, 1), 3, 0),
+        "Gsus4" to Chord("Gsus4", "G", "sus4", intArrayOf(3, 3, 0, 0, 1, 3), intArrayOf(2, 3, 0, 0, 1, 4)),
+        "G#" to Chord("G#", "G#", "Major", intArrayOf(4, 6, 6, 5, 4, 4), intArrayOf(1, 3, 4, 2, 1, 1), 4, 0),
+        "Ab" to Chord("Ab", "G#", "Major", intArrayOf(4, 6, 6, 5, 4, 4), intArrayOf(1, 3, 4, 2, 1, 1), 4, 0),
+        "Abm" to Chord("Abm", "G#", "Minor", intArrayOf(4, 6, 6, 4, 4, 4), intArrayOf(1, 3, 4, 1, 1, 1), 4, 0),
+        "Ab7" to Chord("Ab7", "G#", "7", intArrayOf(4, 6, 4, 5, 4, 4), intArrayOf(1, 3, 1, 2, 1, 1), 4, 0),
         "A" to Chord("A", "A", "Major", intArrayOf(-1, 0, 2, 2, 2, 0), intArrayOf(0, 0, 1, 2, 3, 0)),
         "Am" to Chord("Am", "A", "Minor", intArrayOf(-1, 0, 2, 2, 1, 0), intArrayOf(0, 0, 2, 3, 1, 0)),
+        "A7" to Chord("A7", "A", "7", intArrayOf(-1, 0, 2, 0, 2, 0), intArrayOf(0, 0, 1, 0, 2, 0)),
+        "Amaj7" to Chord("Amaj7", "A", "maj7", intArrayOf(-1, 0, 2, 1, 2, 0), intArrayOf(0, 0, 2, 1, 3, 0)),
+        "Am7" to Chord("Am7", "A", "m7", intArrayOf(-1, 0, 2, 0, 1, 0), intArrayOf(0, 0, 2, 0, 1, 0)),
+        "Asus4" to Chord("Asus4", "A", "sus4", intArrayOf(-1, 0, 2, 2, 3, 0), intArrayOf(0, 0, 1, 2, 3, 0)),
+        "A7sus4" to Chord("A7sus4", "A", "7sus4", intArrayOf(-1, 0, 2, 0, 3, 0), intArrayOf(0, 0, 1, 0, 3, 0)),
+        "A#" to Chord("A#", "A#", "Major", intArrayOf(-1, 1, 3, 3, 3, 1), intArrayOf(0, 1, 2, 3, 4, 1), 1, 1),
         "Bb" to Chord("Bb", "A#", "Major", intArrayOf(-1, 1, 3, 3, 3, 1), intArrayOf(0, 1, 2, 3, 4, 1), 1, 1),
+        "Bbm" to Chord("Bbm", "A#", "Minor", intArrayOf(-1, 1, 3, 3, 2, 1), intArrayOf(0, 1, 3, 4, 2, 1), 1, 1),
+        "Bb7" to Chord("Bb7", "A#", "7", intArrayOf(-1, 1, 3, 1, 3, 1), intArrayOf(0, 1, 3, 1, 4, 1), 1, 1),
         "B" to Chord("B", "B", "Major", intArrayOf(-1, 2, 4, 4, 4, 2), intArrayOf(0, 1, 2, 3, 4, 1), 2, 1),
-        "Bm" to Chord("Bm", "B", "Minor", intArrayOf(-1, 2, 4, 4, 3, 2), intArrayOf(0, 1, 3, 4, 2, 1), 2, 1)
+        "Bm" to Chord("Bm", "B", "Minor", intArrayOf(-1, 2, 4, 4, 3, 2), intArrayOf(0, 1, 3, 4, 2, 1), 2, 1),
+        "B7" to Chord("B7", "B", "7", intArrayOf(-1, 2, 1, 2, 0, 2), intArrayOf(0, 2, 1, 3, 0, 4)),
+        "Bm7" to Chord("Bm7", "B", "m7", intArrayOf(-1, 2, 4, 2, 3, 2), intArrayOf(0, 1, 3, 1, 2, 1), 2, 1),
+        "Bsus4" to Chord("Bsus4", "B", "sus4", intArrayOf(-1, 2, 4, 4, 5, 2), intArrayOf(0, 1, 2, 3, 4, 1), 2, 1)
     )
 
     fun getChord(name: String): Chord? {
         val trimmed = name.trim()
-        return CHORDS[trimmed] ?: CHORDS[trimmed.replaceFirstChar { it.uppercase() }]
+        val direct = CHORDS[trimmed] ?: CHORDS[trimmed.replaceFirstChar { it.uppercase() }]
+        if (direct != null) return direct
+
+        val enharmonics = mapOf(
+            "Db" to "C#", "Gb" to "F#", "Ab" to "G#", "Bb" to "A#", "Eb" to "D#"
+        )
+        for ((flat, sharp) in enharmonics) {
+            if (trimmed.startsWith(flat)) {
+                val alias = sharp + trimmed.removePrefix(flat)
+                CHORDS[alias]?.let { return it }
+            } else if (trimmed.startsWith(sharp)) {
+                val alias = flat + trimmed.removePrefix(sharp)
+                CHORDS[alias]?.let { return it }
+            }
+        }
+        return null
     }
 
     fun getSoundingChordName(name: String, capo: Int): String {
@@ -463,7 +521,7 @@ object ChordDatabase {
         val newRoot = NOTE_NAMES[(rootIdx + capo) % 12]
         val rootLen = if (trimmed.length >= 2 && (trimmed[1] == '#' || trimmed[1] == 'b')) 2 else 1
         val suffix = trimmed.drop(rootLen)
-        return "$newRoot$suffix"
+        return "\$newRoot\$suffix"
     }
 }`
   },
@@ -629,12 +687,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pocketguitar.audio.AudioEngine
 import com.pocketguitar.engine.*
-import com.pocketguitar.model.Chord
 import com.pocketguitar.model.ChordDatabase
 import com.pocketguitar.ui.components.ChordDiagram
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.cancel
 
 class MainActivity : ComponentActivity() {
 
@@ -666,6 +723,7 @@ class MainActivity : ComponentActivity() {
         super.onDestroy()
         strumRunner.stop()
         audioEngine.release()
+        appScope.cancel()
     }
 }
 
@@ -827,7 +885,10 @@ fun SetupScreen(
                                 selectedContainerColor = Color(0xFF1E293B)
                             ),
                             border = InputChipDefaults.inputChipBorder(
-                                borderColor = Color(0xFFF59E0B)
+                                enabled = true,
+                                selected = true,
+                                borderColor = Color(0xFFF59E0B),
+                                selectedBorderColor = Color(0xFFF59E0B)
                             )
                         )
                     }
@@ -1197,12 +1258,103 @@ fun PerformanceScreen(
 }`
   },
   {
+    path: 'app/src/main/java/com/pocketguitar/ui/components/ChordDiagram.kt',
+    name: 'ChordDiagram.kt',
+    type: 'kotlin',
+    content: `package com.pocketguitar.ui.components
+
+import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.layout.size
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.drawText
+import androidx.compose.ui.text.rememberTextMeasurer
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.pocketguitar.model.Chord
+
+@Composable
+fun ChordDiagram(
+    chord: Chord,
+    modifier: Modifier = Modifier.size(width = 110.dp, height = 130.dp),
+    primaryColor: Color = Color(0xFFF59E0B),
+    lineColor: Color = Color(0xFF94A3B8),
+    textColor: Color = Color(0xFFE2E8F0)
+) {
+    val textMeasurer = rememberTextMeasurer()
+
+    Canvas(modifier = modifier) {
+        val width = size.width
+        val height = size.height
+        val topMargin = height * 0.18f
+        val bottomMargin = height * 0.1f
+        val leftMargin = width * 0.18f
+        val rightMargin = width * 0.82f
+        val gridWidth = rightMargin - leftMargin
+        val gridHeight = height - topMargin - bottomMargin
+        val numFrets = 4
+        val fretSpacing = gridHeight / numFrets
+        val stringSpacing = gridWidth / 5f
+
+        drawLine(color = textColor, start = Offset(leftMargin - 2f, topMargin), end = Offset(rightMargin + 2f, topMargin), strokeWidth = 6f)
+
+        for (fret in 1..numFrets) {
+            val y = topMargin + fret * fretSpacing
+            drawLine(color = lineColor.copy(alpha = 0.5f), start = Offset(leftMargin, y), end = Offset(rightMargin, y), strokeWidth = 2f)
+        }
+
+        for (string in 0..5) {
+            val x = leftMargin + string * stringSpacing
+            drawLine(color = lineColor, start = Offset(x, topMargin), end = Offset(x, height - bottomMargin), strokeWidth = (3.5f - string * 0.45f).coerceAtLeast(1.2f))
+        }
+
+        for (string in 0..5) {
+            val fret = chord.frets[string]
+            val x = leftMargin + string * stringSpacing
+            val y = topMargin * 0.55f
+            when {
+                fret < 0 -> {
+                    val xSize = 5f
+                    drawLine(color = Color(0xFFEF4444), start = Offset(x - xSize, y - xSize), end = Offset(x + xSize, y + xSize), strokeWidth = 2.5f)
+                    drawLine(color = Color(0xFFEF4444), start = Offset(x - xSize, y + xSize), end = Offset(x + xSize, y - xSize), strokeWidth = 2.5f)
+                }
+                fret == 0 -> drawCircle(color = textColor.copy(alpha = 0.8f), radius = 4.5f, center = Offset(x, y), style = Stroke(width = 2f))
+            }
+        }
+
+        if (chord.barreFret != null && chord.barreFrom != null) {
+            val y = topMargin + (chord.barreFret - 0.5f) * fretSpacing
+            val startX = leftMargin + chord.barreFrom * stringSpacing
+            drawLine(color = primaryColor, start = Offset(startX, y), end = Offset(rightMargin, y), strokeWidth = 14f)
+        }
+
+        for (string in 0..5) {
+            val fret = chord.frets[string]
+            if (fret > 0) {
+                val x = leftMargin + string * stringSpacing
+                val y = topMargin + (fret - 0.5f) * fretSpacing
+                drawCircle(color = primaryColor, radius = 8.5f, center = Offset(x, y))
+                val finger = chord.fingers[string]
+                if (finger in 1..4) {
+                    val style = TextStyle(color = Color.Black, fontSize = 9.sp)
+                    val measured = textMeasurer.measure(finger.toString(), style = style)
+                    drawText(textMeasurer = textMeasurer, text = finger.toString(), topLeft = Offset(x - measured.size.width / 2f, y - measured.size.height / 2f), style = style)
+                }
+            }
+        }
+    }
+}`
+  },
+  {
     path: 'app/src/main/AndroidManifest.xml',
     name: 'AndroidManifest.xml',
     type: 'xml',
     content: `<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pocketguitar">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
@@ -1235,7 +1387,10 @@ fun PerformanceScreen(
     path: 'app/build.gradle.kts',
     name: 'build.gradle.kts (app)',
     type: 'gradle',
-    content: `plugins {
+    content: `import org.gradle.api.tasks.testing.logging.TestExceptionFormat
+import org.gradle.api.tasks.testing.logging.TestLogEvent
+
+plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
 }
@@ -1252,6 +1407,16 @@ android {
         versionName = "1.0.0"
     }
 
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+
     buildFeatures {
         compose = true
     }
@@ -1259,14 +1424,42 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.14"
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = "17"
+    }
+}
+
+tasks.withType<Test>().configureEach {
+    testLogging {
+        exceptionFormat = TestExceptionFormat.FULL
+        events(TestLogEvent.PASSED, TestLogEvent.FAILED, TestLogEvent.SKIPPED, TestLogEvent.STANDARD_ERROR)
+        showCauses = true
+        showExceptions = true
+        showStackTraces = true
+    }
 }
 
 dependencies {
     val composeBom = platform("androidx.compose:compose-bom:2024.10.01")
     implementation(composeBom)
+    implementation("androidx.activity:activity-compose:1.9.3")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.7")
+    implementation("androidx.compose.animation:animation")
+    implementation("androidx.compose.foundation:foundation")
     implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.material:material-icons-extended")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
     testImplementation("junit:junit:4.13.2")
 }`
   },
@@ -1399,7 +1592,7 @@ class ChordAndAudioVerificationTest {
         val chord = ChordDatabase.getChord(name) ?: error("Missing chord: \$name")
         return chord.getFrequencies(capo)
             .filter { it > 20f }
-            .map { freq -> ChordDatabase.NOTE_NAMES[freqToMidiRounded(it) % 12] }
+            .map { freq -> ChordDatabase.NOTE_NAMES[freqToMidiRounded(freq) % 12] }
             .toSet()
     }
 
@@ -1596,7 +1789,7 @@ jobs:
           gradle-version: '8.10.2'
           cache-disabled: true
 
-      - name: Build APK and AAB
+      - name: Run Chord & Audio DSP Unit Tests
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
         run: |
@@ -1604,15 +1797,40 @@ jobs:
           if [ -f "android/settings.gradle.kts" ]; then
             cd android
           fi
-          echo "Building in: $(pwd)"
           gradle --version
-          echo "Running Chord & Audio DSP Verification Tests..."
           gradle testDebugUnitTest --no-daemon --stacktrace
+
+      - name: Upload Unit Test Report (On Failure)
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: PocketGuitar-Unit-Test-Reports
+          path: |
+            **/build/reports/tests/**
+          if-no-files-found: ignore
+
+      - name: Build Debug APK
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+        run: |
+          set -e
+          if [ -f "android/settings.gradle.kts" ]; then
+            cd android
+          fi
           gradle assembleDebug --no-daemon --stacktrace
+
+      - name: Build Release AAB
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+        run: |
+          set -e
+          if [ -f "android/settings.gradle.kts" ]; then
+            cd android
+          fi
           gradle bundleRelease --no-daemon --stacktrace
           find . -name "*.apk" -o -name "*.aab"
 
-      - name: Upload Debug APK
+      - name: Upload Debug APK Artifact
         uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -1622,7 +1840,7 @@ jobs:
             **/build/outputs/apk/debug/*.apk
           if-no-files-found: warn
 
-      - name: Upload Release AAB Bundle
+      - name: Upload Release AAB Bundle Artifact
         uses: actions/upload-artifact@v4
         if: always()
         with:

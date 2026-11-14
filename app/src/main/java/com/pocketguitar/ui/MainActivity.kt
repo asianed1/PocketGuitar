@@ -35,12 +35,11 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.pocketguitar.audio.AudioEngine
 import com.pocketguitar.engine.*
-import com.pocketguitar.model.Chord
 import com.pocketguitar.model.ChordDatabase
 import com.pocketguitar.ui.components.ChordDiagram
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.launch
+import kotlinx.coroutines.cancel
 
 class MainActivity : ComponentActivity() {
 
@@ -77,6 +76,7 @@ class MainActivity : ComponentActivity() {
         super.onDestroy()
         strumRunner.stop()
         audioEngine.release()
+        appScope.cancel()
     }
 }
 
@@ -283,7 +283,8 @@ fun SetupScreen(
                             border = InputChipDefaults.inputChipBorder(
                                 enabled = true,
                                 selected = true,
-                                borderColor = Color(0xFFF59E0B)
+                                borderColor = Color(0xFFF59E0B),
+                                selectedBorderColor = Color(0xFFF59E0B)
                             )
                         )
                     }

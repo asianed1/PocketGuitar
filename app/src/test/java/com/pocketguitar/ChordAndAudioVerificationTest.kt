@@ -20,7 +20,7 @@ class ChordAndAudioVerificationTest {
         val chord = ChordDatabase.getChord(name) ?: error("Missing chord: $name")
         return chord.getFrequencies(capo)
             .filter { it > 20f }
-            .map { freq -> ChordDatabase.NOTE_NAMES[freqToMidiRounded(it) % 12] }
+            .map { freq -> ChordDatabase.NOTE_NAMES[freqToMidiRounded(freq) % 12] }
             .toSet()
     }
 

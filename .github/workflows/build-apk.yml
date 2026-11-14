@@ -28,31 +28,45 @@ jobs:
           gradle-version: '8.10.2'
           cache-disabled: true
 
-      - name: Build APK and AAB
+      - name: Run Chord & Audio DSP Unit Tests
         env:
           ANDROID_HOME: /usr/local/lib/android/sdk
         run: |
           set -e
-
-          # Detect whether project is in root or in android/ subfolder
           if [ -f "android/settings.gradle.kts" ]; then
             cd android
           fi
-          echo "Building in: $(pwd)"
-          ls -la
-
           gradle --version
-
-          echo "Running Chord & Audio DSP Verification Tests..."
           gradle testDebugUnitTest --no-daemon --stacktrace
 
-          echo "Compiling Debug APK..."
+      - name: Upload Unit Test Report (On Failure)
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: PocketGuitar-Unit-Test-Reports
+          path: |
+            **/build/reports/tests/**
+          if-no-files-found: ignore
+
+      - name: Build Debug APK
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+        run: |
+          set -e
+          if [ -f "android/settings.gradle.kts" ]; then
+            cd android
+          fi
           gradle assembleDebug --no-daemon --stacktrace
 
-          echo "Compiling Release AAB Bundle..."
+      - name: Build Release AAB
+        env:
+          ANDROID_HOME: /usr/local/lib/android/sdk
+        run: |
+          set -e
+          if [ -f "android/settings.gradle.kts" ]; then
+            cd android
+          fi
           gradle bundleRelease --no-daemon --stacktrace
-
-          echo "Build finished! Generated outputs:"
           find . -name "*.apk" -o -name "*.aab"
 
       - name: Upload Debug APK Artifact
